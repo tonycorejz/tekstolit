@@ -1,0 +1,152 @@
+.section_2{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  .materials{
+    display: flex;
+    flex-direction: row;
+    width: 82%;
+    height: auto;
+    .material{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 260px;
+      height: 500px;
+      margin: 0 20px;
+      img{
+        width: 100%;
+        height: auto;
+        margin: 60px 0;
+      }
+
+      .material_name{
+        color: black;
+        font-family: "Manrope";
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      
+      .button_price{
+        background: #ff4500;
+        border: 0;
+        color: #ffffff;
+
+      
+      }
+      .button_more{
+        background: white;
+        border-color: black;
+        
+      
+      }
+      .material_description{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        z-index: 10;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+        .material_description_head{
+          height: auto;
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.534);
+          position: fixed;
+          top:0;
+          display: flex;
+          justify-content: flex-end;
+          img{
+            width: 30px;
+            height: auto;
+            padding: 8px 15px 8px 5px;
+          }
+        }
+        img{
+          width: auto;
+          height: 400px;
+          margin: 0;
+        }
+        .material_description_text{
+          width: 40%;
+          font-family: "Manrope";
+          font-size: 16px;
+          line-height: 1.5;
+          .material_name{
+            font-size: 25px;
+            font-weight: bold;
+          }
+          .availability{
+            padding: 20px 0;
+            font-size: 25px;
+          }
+          .available{
+            color: rgb(52, 194, 42);
+          }
+          .params{
+            .param_head{
+              font-weight: bold;
+            }
+            margin-bottom: 10px;
+          }
+          .material_description_contacts{
+            font-size: 20px;
+            padding: 10px 0;
+            a{
+              text-decoration: none;
+              color: black;
+            }
+          }
+          @media screen and (max-width: 1020px) {
+            font-size: 14px;
+            width: 80%;
+            .material_name{
+              font-size: 20px;
+              font-weight: bold;
+            }
+            .availability{
+              padding: 10px 0;
+              font-size: 20px;
+            }
+            .material_description_contacts{
+              font-size: 15px;
+              padding: 10px 0;
+            }
+
+          }
+        }
+      }
+    }
+    &.service{
+      width: 62%;
+      .material{
+        height: 400px;
+        align-items: center;
+        img{
+          margin: 30px 0;
+        }
+        .material_buttons{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      } 
+    }
+  }
+
+  hr{
+    align-content: center;
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    border: 0;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,144 @@
+header{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  justify-content: space-between;
+  .logo{
+    padding: 5px 20px 5px 20px;
+  }
+  img{
+    width: 100px;
+    height: auto;
+  }
+  .menu{
+    width: 70%;
+    margin-right: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    .menu_items{
+      width: 60%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      li{
+        display: flex;
+        align-self: center;
+        list-style-type: none;
+        a{
+          color: #333333;
+          text-decoration: none;
+          font-family: "Manrope";
+        }
+      }
+      
+    }
+    .menu_buttons{
+      display: flex;
+      flex-flow: row nowrap;
+      .menu_button{
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 10px 30px 10px 30px;
+        border-radius: 5px;
+        background: #ff4500;
+        align-self: center;
+        margin: 10px;
+        a{
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Russo";
+        font-size: 14px;
+        white-space: nowrap;
+        }
+      }
+    }
+    &.open{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      .menu_items{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        padding: 0;
+        li{
+          padding: 5px;
+          a{
+            color: white;
+          }
+        }
+      }
+      .menu_buttons{
+        display: flex;
+        flex-flow: column nowrap;
+      }
+    }
+  }
+}
+
+.navBurger {
+  display: none;
+  position: fixed;
+  right: 70px;
+  top: 30px;
+  cursor: pointer;
+  background: #111;
+  box-sizing: border-box;
+  background-clip: content-box;
+  width: 40px;
+  height: 24px;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background: transparent;
+
+  &:before,
+  &:after {
+      content: "";
+      position: absolute;
+      background: #3e3a34;
+      height: 2px;
+      width: 100%;
+      right: 0;
+      will-change: rotate;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+  }
+  &:before {
+      top: -5px;
+  }
+  &:after {
+      bottom: -5px;
+      width: 90%;
+  }
+  &.active {
+      background: transparent;
+      background-clip: content-box;
+  }
+  &.active:before {
+      -webkit-transform: rotate(135deg);
+      transform: rotate(135deg);
+      top: 0;
+      background: #eee;
+      width: 110%;
+  }
+  &.active:after {
+      bottom: 0;
+      -webkit-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+      background: #eee;
+      width: 110%;
+  }
+}

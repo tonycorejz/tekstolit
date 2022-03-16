@@ -1,0 +1,59 @@
+.section_4{
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-bottom: 60px;
+
+  .stages{
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 80%;
+    padding: 80px 40px;
+    @media screen and (max-width: 400px){
+      width: 95%;
+      padding: 5px 5px;
+    }
+
+    .stage{
+
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      padding: 10px;
+
+      img{
+        width: 100px;
+      }
+      h1{
+        font-size: 20px;
+        font-family: "Manrope";
+        font-weight: bold;
+      }
+      h2{
+        font-size: 14px;
+        font-family: "Manrope";
+        font-weight: lighter;
+        text-align: center;
+      }
+    }
+
+    .arrow{
+      align-self: center;
+      img{
+        width: 40px;
+      }
+    }
+  }
+
+  .button_order{
+    padding: 23px 60px;
+    
+    background: #ff4500;
+    border: 0;
+    color: #ffffff;
+  }
+
+}

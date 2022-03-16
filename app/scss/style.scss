@@ -1,0 +1,234 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "navigation_menu";
+@import "section_1";
+@import "section_2";
+@import "section_3";
+@import "section_4";
+@import "section_5";
+@import "media";
+
+
+
+.section_6{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 20px 0 80px 0; 
+  .use_info{
+    width: 70%;
+    max-width: 1000px;
+    font-family: "Manrope";
+    font-weight: lighter;
+    font-size: 16px;
+    .use_info_head{
+      padding: 40px 0;
+    }
+    .use_info_text{
+      padding: 5px 0;
+    }
+  }
+}
+
+.section_7{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 60px 0;
+  form{
+    width: 60%;
+    @media screen and (max-width: 600px){
+      width: 80%;
+    }
+    @media screen and (max-width: 400px){
+      width: 95%;
+    }
+  }
+  .form_input_box{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px;
+    .input_box{
+      display: flex;
+      color: #000;
+      font-weight: bold;
+      font-family: "Manrope";
+      width: 100%;
+      margin: 0 10px;
+
+      input{
+        color: #000000;
+        background-color: #ffffff;
+        border-width: 1px;;
+        border-color: black;
+        height: 50px;
+        width: 100%;
+        padding: 5px 40px;
+        margin: 10px 0;
+      }
+    }
+    .submit_button{
+      display: flex;
+      padding: 20px 40px;
+      justify-content: center;
+      border-radius: 5px;
+      border: 0;
+      color: #ffffff;
+      font-family: "Russo";
+      font-size: 14px;
+      white-space: nowrap;
+      background: #ff4500;
+      align-self: center;
+      margin: 10px;
+    }
+  }
+  .policy{
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.section_8{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 60px;
+  .contacts{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 70%;
+    .contact-text{
+      color: #3e3a34;
+      font-family: "Manrope";
+      line-height: 1.5;
+      font-size: 16px;
+      a{
+        text-decoration: none;
+        color: #3e3a34;
+        font-size: 25px;
+        padding: 0;
+      }
+      .email{
+        color: #ff4500;
+      }
+      .padding_box{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+        .contact_head{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  form{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 60px;
+    @media screen and (max-width: 400px){
+      padding: 0 10px;
+    }
+    .input_box{
+      padding: 8px 0;
+      font-family: "Manrope";
+      font-size: 14px;
+      .form_inpt{
+        padding: 20px;
+        border: 1px solid #c7c7c7;
+        width: 90%;
+      }
+      textarea{
+        height: 50px;
+      }
+    }
+
+    .submit_button{
+      display: flex;
+      padding: 20px 80px;
+      justify-content: center;
+      border-radius: 5px;
+      border: 0;
+      color: #ffffff;
+      font-family: "Russo";
+      font-size: 14px;
+      white-space: nowrap;
+      background: #ff4500;
+      margin: 20px 0;
+    }
+  }
+}
+
+footer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  background-color: #1f1d1c;
+  p{
+    color: white;
+    font-family: "Manrope";
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+
+body{
+  h1{
+    font-family: "Russo";
+  }
+}
+
+.head_of_sections{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px 0 40px 0;
+  align-items: center;
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 40px;
+  @media screen and (max-width: 600px){
+    font-size: 30px;
+  }
+}
+
+.material_button{
+  display: flex;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+  margin: 8px 0;
+  font-family: "Russo";
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.policy{
+  font-size: 12px;
+  color: #3e3a34;
+  font-family: "Manrope";
+}
+
+.warning{
+  font-family: "Manrope";
+  font-size: 14px;
+  font-weight: bolder;
+  color: #ff0000;
+  margin: 0;
+}
+
+.warn_inpt{
+  border-color: red !important;
+}
+
+.locked {
+  overflow: hidden;
+}
+
+.invise{
+  display: none !important;
+}

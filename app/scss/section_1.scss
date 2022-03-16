@@ -1,0 +1,110 @@
+.section_1{
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  min-height: 800px;
+  max-height: 1200px;
+  background-image: url(../img/sec_01_background.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 1500px) {
+    background-size: 100%;
+  }
+  align-items: center;
+  justify-content: center;
+
+  .main_info{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 1100px;
+    .info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 700px;
+      margin: 30px;
+      text-align: center;
+      h1{
+        font-size: 40px;
+        line-height: 1.5;
+        color: white;
+        white-space: nowrap;
+        @media screen and (max-width: 600px){
+          font-size: 30px;
+        }
+      }
+      h2{
+        font-size: 30px;
+        line-height: 1.5;
+        color: white;
+        white-space: nowrap;
+        font-family: "Manrope";
+        font-weight: lighter;
+        @media screen and (max-width: 600px){
+          font-size: 20px;
+        }
+      }
+    }
+    form{
+      display: flex;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 40px;
+      margin: 20px;
+      flex-direction: column;
+      border-radius: 5px;
+      .form_name{
+        text-align: center;
+        margin-bottom: 10px;
+        h1{
+          font-size: 26px;
+          color: #ff4500;
+          font-weight: lighter;
+          margin: 0;
+        }
+        h2{
+          font-size: 16px;
+          color: #3e3a34;
+          font-family: "Manrope";
+        }
+      }
+      .form_input_box{
+        display: flex;
+        height: 250px;
+        flex-direction: column;
+        justify-content: space-around;
+        .input_box{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          color: #000;
+          font-weight: bold;
+          font-family: "Manrope";
+          input{
+            color: #000000;
+            background-color: #bdbdbd;
+            border: 0;
+            height: 50px;
+            padding: 0 18px;
+            margin: 10px 0;
+          }
+        }
+        .submit_button{
+          display: flex;
+          width: 100%;
+          padding: 15px;
+          justify-content: center;
+          border-radius: 5px;
+          border: 0;
+          color: #ffffff;
+          font-family: "Russo";
+          font-size: 14px;
+          white-space: nowrap;
+          background: #ff4500;
+          align-self: center;
+          margin: 10px;
+        }
+      }
+      
+    }
+  }
+}

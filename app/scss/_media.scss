@@ -1,0 +1,146 @@
+@media screen and (max-width: 1100px) {
+  .section_1{ 
+    height: auto;
+    padding-top: 100px;
+    .main_info{
+      flex-flow: column nowrap;
+      width: 80%;
+      align-items: center;
+      
+      .info{
+        width: 500px;
+        margin: 0;
+        h1{
+          margin: 10px;
+        }
+        h2{
+          font-size: 25px;
+          margin: 10px;
+        }
+      }
+    }
+  }
+  header{
+    .menu{
+      display: none;
+    }
+    .navBurger{
+        display: flex;
+      }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section_2{
+    .materials{
+      .material{
+        width: 170px;
+        height: 390px;
+        img{
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+
+
+  .section_4{
+    .stages{
+      flex-flow: column nowrap;
+      .arrow{
+          transform: rotate(90deg);
+          padding: 20px;
+        }
+    }
+  }
+
+  .section_8{
+    .contacts{
+      flex-flow: column nowrap !important;
+      align-items: center;
+      .contact-text{
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section_7{
+    form{
+      .form_input_box{
+        flex-flow: column nowrap;
+      }
+    }
+    
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .materials{
+    overflow-X: scroll;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section_1{ 
+    .main_info{
+      width: 100%;
+      
+      .info{
+        width: 400px;
+        margin: 0;
+        h1{
+          font-size: 28px;
+          margin: 10px;
+        }
+        h2{
+          font-size: 18px;
+          margin: 10px;
+        }
+      }
+
+      form{
+        padding: 20px;
+        margin: 20px;
+        h1{
+          font-size: 20px;
+        }
+        h2{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section_1{ 
+    .main_info{
+      
+      .info{
+        width: 300px;
+        margin: 0;
+        h1{
+          font-size: 22px;
+          margin: 10px;
+        }
+        h2{
+          font-size: 18px;
+          margin: 10px;
+        }
+      }
+
+      form{
+        padding: 20px;
+        margin: 20px;
+        h1{
+          font-size: 20px;
+        }
+        h2{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
